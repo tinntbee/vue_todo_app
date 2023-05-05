@@ -86,12 +86,16 @@
 
 <script lang="ts">
 import { Task } from "@/store/types";
+import { PropType } from "vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "TaskComponent",
   props: {
-    task: Task,
+    task: {
+      type: Object as PropType<Task>,
+      required: true,
+    },
   },
   data() {
     return {

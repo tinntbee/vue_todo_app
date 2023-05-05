@@ -12,3 +12,5 @@ export interface Task {
   completed?: Date;
   deleted?: Date;
 }
+
+export default {};
